@@ -15,4 +15,5 @@ setup('authenticate as admin', async ({ page }) => {
   await page.waitForURL('/')
   await expect(page.getByRole('heading', { name: 'รายการสั่งผลิต' })).toBeVisible()
   await page.context().storageState({ path: adminFile })
+  //
 })
